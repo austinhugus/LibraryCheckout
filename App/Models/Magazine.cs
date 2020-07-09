@@ -1,13 +1,13 @@
 namespace libraryCheckout.App.Models {
     public class Magazine : Publications {
 
-        public Magazine (string subject, string category, string title, string author, string description, bool available) : base (title, author, description, available) {
+        public Magazine (string subject, string edition, string title, string author, string description, int inStock) : base (title, author, description, inStock) {
             Subject = subject;
-            Category = category;
+            Edition = edition;
 
         }
         public string Subject { get; set; }
-        public string Category { get; set; }
+        public string Edition { get; set; }
 
     }
 

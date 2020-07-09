@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace libraryCheckout {
+namespace library {
     class Program {
         static void Main (string[] args) {
-            Console.WriteLine ("Hello World!");
-            new Application ().Run ();
-
+            App app = new App ();
+            app.Run ();
         }
     }
 }
